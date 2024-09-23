@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/Footer-Logo.png";
-
+import { Send } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-[#263238]">
@@ -245,9 +245,18 @@ const Footer = () => {
 
             <div>
               <p className="font-medium text-white">Stay to Update</p>
-
-             <input className="my-4 rounded bg-[#515b60] h-10 text-center w-64
-             " type="text" name="" id="" placeholder="Your email address "/>
+              <div className="relative">
+                <input
+                  className="my-4 rounded bg-[#515b60] h-10  w-64 
+                  placeholder:p-4
+             "
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Your email address "
+                />
+                <Send size={18} color="white" className="absolute right-[310px] top-6 md:top-7  md:right-0" />
+              </div>
             </div>
           </div>
         </div>
